@@ -1,0 +1,58 @@
+<style>
+  h1 {
+    color: green;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  h1:hover {
+    color: blue;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px red;
+  }
+
+  img {
+    width: 2cm;
+    height: 2cm;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 75%;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px red;
+    opacity: 100%;
+  }
+</style>
+<h1>CV ONLINE</h1>
+
+<img src="foto.jpg" onclick="diskusi()" />
+<script>
+  function diskusi() {
+    alert("Halo, saya Iin Sholihin");
+    let namaTeman = prompt("Kamu siapa?");
+    if (!namaTeman) return;
+    alert(`Halo ${namaTeman}! Selamat Siang!`);
+  }
+</script>
+
+<p>Personal Info:</p>
+
+<script src="jquery.min.js"></script>
+<script>
+  $(function () {
+    // alert("JQuery sudah ready!");
+    $("li").click(function () {
+      $(this).hide();
+    });
+  });
+</script>
+<ul>
+  <li>Nama: Iin Sholihin</li>
+  <li>Alamat: Ciwaringin</li>
+  <li>Kelas: TI-2022-KIP</li>
+</ul>
